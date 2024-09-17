@@ -1,0 +1,9 @@
+<div class="create-chat-room-container">
+    <form (ngSubmit)="createRoom()">
+      <div>
+        <label for="chatRoomName">Chat Room Name:</label>
+        <input type="text" id="chatRoomName" [(ngModel)]="chatRoomName" name="chatRoomName" required />
+      </div>
+      <button type="submit">Create Room</button>
+    </form>
+  </div>

@@ -1,0 +1,13 @@
+<div>
+    <h2>Joinable Chat Rooms</h2>
+    <ul>
+      <li *ngFor="let room of joinableRooms">
+        <a href="#" (click)="openChatRoom(room.roomName)">{{ room.roomName }}</a>
+        <br />
+        <a href="#" (click)="joinRoom(room.roomName)">Join</a>
+        <br />
+      <a href="#" (click)="leaveRoom(room.roomName)">Leave</a>
+      </li>
+    </ul>
+    <button (click)="openCreateRoom()">Create Room</button>
+  </div>
